@@ -1,0 +1,26 @@
+/*the color pallete*/
+:root{
+    --bg: #dfeced;
+    --bezel: #555e5e;
+    --lcd: #8edffa;
+    --lcdBorder: #63b4cf;
+    --ink: #232729;
+    --accent: #9ea9ad;
+}
+
+*{ box-sizing: border-box; }
+
+html, body{
+    height: 100%;
+    margin: 0;
+
+    background: radial-graident (
+        1200px 800px at 70% -10%,
+        #eec9c9 0 40%,
+        #bbe7eb 60%,
+        #96e9f2 80%,
+        #4ed4e9 100%);
+
+        font-family: "Press Start 2P", system-ui, sans-serif;
+        color: var(--bezel);
+}
