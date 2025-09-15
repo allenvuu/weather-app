@@ -3,7 +3,7 @@
     
     --bg: #f78477;
     --bezel: #555e5e;
-    --lcd: #cef7ff;
+    --lcd: #fdfdfd;
     --lcdBorder: #63b4cf;
     --ink: #232729;
     --accent: #9ea9ad;
@@ -16,13 +16,7 @@ html, body{
     height: 100%;
     margin: 0;
 
-    background: radial-graident (
-        1200px 800px at 70% -10%,
-        #ffffff 0 40%,
-        #eaf4f5 60%,
-        #d9ebed 80%,
-        #cfe3e6 100%);
-
+    background: rgb(217, 237, 243);
         font-family: "Press Start 2P", system-ui, sans-serif;
         color: var(--bezel);
 }
