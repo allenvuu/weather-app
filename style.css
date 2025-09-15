@@ -2,7 +2,7 @@
 :root{
     --bg: #dfeced;
     --bezel: #555e5e;
-    --lcd: #8edffa;
+    --lcd: #f0f9fa;
     --lcdBorder: #63b4cf;
     --ink: #232729;
     --accent: #9ea9ad;
@@ -10,17 +10,73 @@
 
 *{ box-sizing: border-box; }
 
+/*setting up the body*/
 html, body{
     height: 100%;
     margin: 0;
 
     background: radial-graident (
         1200px 800px at 70% -10%,
-        #eec9c9 0 40%,
-        #bbe7eb 60%,
-        #96e9f2 80%,
-        #4ed4e9 100%);
+        #ffffff 0 40%,
+        #eaf4f5 60%,
+        #d9ebed 80%,
+        #cfe3e6 100%);
 
         font-family: "Press Start 2P", system-ui, sans-serif;
         color: var(--bezel);
+}
+
+/*where the main display will be*/
+.card{
+    width:min(420px, 92vw);
+    margin: 4vh auto;
+    background: var(--bg);
+    border: 6px solid var(--bezel);
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 0 12px 0 #e1f4f5,
+                0 18px 30px rgba (0, 0, 0, .25);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+}
+
+/*navigation bar*/
+.topbar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search{
+    flex: 1;
+    display: flex;
+    gap: 8px;
+    background: var(--lcd);
+    border: 3px solid var(--bezel);
+    border-radius: 8px;
+    padding: 6px 8px;
+}
+
+.search input{
+    flex: 1;
+    font: 12px/1 "Press Start 2p", monospace;
+    color: var(--ink);
+    background: transparent;
+    border:none;
+    outline: none;
+}
+
+.search button{
+    border: none;
+    background: var(--accent);
+    color: white;
+    padding: 6px 10px;
+    font: 12px/1 "Press Start 2P", monospace;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search button:h hover{
+    filter: brightness (0.9);
 }
