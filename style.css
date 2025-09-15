@@ -1,6 +1,7 @@
 /*the color pallete*/
 :root{
-    --bg: #dfeced;
+    
+    --bg: #f78477;
     --bezel: #555e5e;
     --lcd: #f0f9fa;
     --lcdBorder: #63b4cf;
@@ -79,4 +80,23 @@ html, body{
 
 .search button:h hover{
     filter: brightness (0.9);
+}
+
+/*setting up the screen where the pictures will located*/
+.screen{
+    background: linear-gradient(#afeddf, #89c9ba);
+    border: 6px solid var(--bezel);
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+}
+
+canvas{
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    background: var(--lcd);
+    border: 3px solid var(--lcd-dark);
 }
