@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PawCast</title>
+
+  <!-- All my fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <!--this is basically the navigation to search for the city and such-->
+    <header class="topbar">
+      <div class="led"></div>
+      <form id="searchForm" class="search">
+        <input id="q" name="q" type="search" placeholder="Search city…" autocomplete="off" />
+        <button aria-label="Search" title="Search">🔎</button>
+      </form>
+    </header>
+
+    <!-- this is the main screen that mimics the gameboy aesthetic -->
+    <section class="screen">
+      <canvas id="pix" width="160" height="144" aria-label="Weather pixel scene"></canvas>
+    </section>
+
+    <!--this is where the temperature is displayed-->
+    <footer class="bottom">
+      <div class="status" id="status">—</div>
+      <div class="temp" id="temp">--°F</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
