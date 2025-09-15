@@ -3,7 +3,7 @@
     
     --bg: #f78477;
     --bezel: #555e5e;
-    --lcd: #f0f9fa;
+    --lcd: #cef7ff;
     --lcdBorder: #63b4cf;
     --ink: #232729;
     --accent: #9ea9ad;
@@ -99,4 +99,37 @@ canvas{
     image-rendering: crisp-edges;
     background: var(--lcd);
     border: 3px solid var(--lcd-dark);
+}
+
+/*bottom navigation bar*/
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    align-items: stretch;
+}
+
+/*displays the weather section*/
+.status{
+    padding: 10px;
+    background: var(--lcd);
+    border: 4px solid var(--bezel);
+    border-radius: 8px;
+    color: var(--ink);
+    font-size: 12px;
+    line-height: 1.3;
+    min-height: 48px;
+    display:flex;
+    align-items: center;
+}
+
+.temp{
+    padding: 10px 12px;
+    background: #fff;
+    border: 6px soli var(--bezel);
+    border-radius: 10px;
+    font-size: 22px;
+    display: grid;
+    place-items: center;
+    min-width: 92px;
 }
