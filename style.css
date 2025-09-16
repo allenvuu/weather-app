@@ -86,13 +86,14 @@ html, body{
     place-items: center;
 }
 
-canvas{
+#scene{
     width: 100%;
     height: auto;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     background: var(--lcd);
     border: 3px solid var(--lcd-dark);
+    border-radius: 6px;
 }
 
 /*bottom navigation bar*/
