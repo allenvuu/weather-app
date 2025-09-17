@@ -27,7 +27,7 @@ async function getWeather(city) {
     } else if (condition === "Clouds") {
       imgPath = "assets/Cloudy.jpg";
     } else if (condition === "Rain") {
-      imgPath = "assets/Rainy.png";
+      imgPath = "assets/Rainy.jpg";
     } else if (condition === "Snow") {
       imgPath = "assets/snow.png";
     }
