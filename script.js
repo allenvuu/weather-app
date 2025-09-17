@@ -20,14 +20,14 @@ async function getWeather(city) {
     const temp = data.main.temp;
     let imgPath = "assets/unknown.png"; // default
 
-    if (condition.toLowerCase() === "Clear" && temp > 80) {
+    if (condition.toLowerCase() === "Clear" && temp > 85) {
       imgPath = "assets/unny.jpg";
     } else if (condition === "Clear") {
       imgPath = "assets/Sunny.jpg";
     } else if (condition === "Clouds") {
       imgPath = "assets/Cloudy.jpg";
     } else if (condition === "Rain") {
-      imgPath = "assets/rain.png";
+      imgPath = "assets/Rainy.png";
     } else if (condition === "Snow") {
       imgPath = "assets/snow.png";
     }
